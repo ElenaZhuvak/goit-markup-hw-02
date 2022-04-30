@@ -37,7 +37,7 @@ a {
   color: #000000;
 }
 
-.link-nav.activ {
+.link-nav.active {
   color: var(--accent-color)
 }
 
@@ -55,7 +55,7 @@ a {
   color: var(--accent-color);
 }
 
-.link-nav .activ:active {
+.link-nav .active:active {
   color: var(--accent-color);
 }
 
@@ -214,51 +214,28 @@ color: var(--title-text-color)
   color:var(--title-text-color);
   background-color: var(--background-clr-btn);
 }
-
-.button-filter .activ:active {
-  color: var(--accent-color);
-}
-.button-filter.activ:hover,
-.button-filter.activ:focus {
-font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-cursor: pointer;
-
-color: #FFFFFF;
-background-color: var(--accent-color);
-}
-
 .button-filter:hover,
 .button-filter:focus {
-  color: var(--accent-color);
+  color: #FFFFFF;
+  background-color: var(--accent-color);
 }
+.button-filter .active:active {
+  color: #FFFFFF;
+  background-color: var(--accent-color);
+}
+/* Галерея проектов */
+.cards-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 
-/*  ЗАГОЛОВОК ДЛЯ АССИСТИВНЫХ СИСТЕМ!!
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-} */
+  color: var(--title-text-color)
+}
+.cards-item {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 
-/* Портфолио карточки
-<a href=“”>
-   <img src=“”/>
-      <h2></h2>
-        <p></p>
-</a>  */
-
-/* «active», потім піди дай сторінці portfolio «active» ,
-Потім класу задай:
- active {
- color: #FFFFFF; } - колір звісно ж з макету візьми */
+  color: var(--primary-text-color);
+}
