@@ -2,6 +2,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --background-clr-btn: #F5F4FA;
 }
 
 body {
@@ -19,76 +20,245 @@ a {
 /* Шапка сайта */
 .logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
   color: var(--accent-color);
 }
+
 .logo-title {
   font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  color: black;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: #000000;
 }
+
+.link-nav.activ {
+  color: var(--accent-color)
+}
+
 .link-nav {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
   color: var(--title-text-color);
 }
 
-.link-nav:hover {
+.link-nav:hover,
+.link-nav:focus {
   color: var(--accent-color);
 }
-.link-nav:focus {
+
+.link-nav .activ:active {
   color: var(--accent-color);
 }
 
 .contact-nav {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
+
   color: var(--primary-text-color);
 }
 
-.contact-nav:hover {
-  color: var(--accent-color);
-}
+.contact-nav:hover,
 .contact-nav:focus {
   color: var(--accent-color);
 }
 
 /* Секция Герой */
 .hero {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
   background: #2f303a;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: #ffffff;
 }
-/*основной цвет  #757575
-вторичный цвет текста #212121
-цвет акцент #2196F3;
 
-Бэграунт секции Наша Команда
-цвет  #F5F4FA;
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 
-цвета футера
-акцент 2196F3
-адресс
-цвет телефона и почты color: rgba(255, 255, 255, 0.6);
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+}
 
-*/
+/* Основные задачи Веб-Студии */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-text-color)
+  }
+
+.features-text {
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+
+color: var(--primary-text-color)
+}
+
+/* Задачи Веб-Студии */
+.tasks {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--title-text-color)
+}
+
+/* Наша команда */
+.section-team {
+  background: #F5F4FA;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color)
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.team-stream {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color)
+}
+
+/* Футер */
+.footer {
+  background: #2F303A;
+}
+.address-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #FFFFFF;
+}
+.address-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Страница Портфолио */
+
+.button-filter {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  
+  color:var(--title-text-color);
+  background-color: var(--background-clr-btn);
+}
+
+.button-filter .activ:active {
+  color: var(--accent-color);
+}
+.button-filter.activ:hover,
+.button-filter.activ:focus {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+cursor: pointer;
+
+color: #FFFFFF;
+background-color: var(--accent-color);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--accent-color);
+}
+
+/*  ЗАГОЛОВОК ДЛЯ АССИСТИВНЫХ СИСТЕМ!!
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} */
+
+/* Портфолио карточки
+<a href=“”>
+   <img src=“”/>
+      <h2></h2>
+        <p></p>
+</a>  */
+
+/* «active», потім піди дай сторінці portfolio «active» ,
+Потім класу задай:
+ active {
+ color: #FFFFFF; } - колір звісно ж з макету візьми */
