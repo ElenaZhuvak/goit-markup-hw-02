@@ -181,6 +181,16 @@ color: var(--title-text-color)
 .footer {
   background: #2F303A;
 }
+
+.logo-title-footer {
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: #FFFFFF;
+}
+
 .address-text {
   font-family: 'Roboto';
   font-style: normal;
